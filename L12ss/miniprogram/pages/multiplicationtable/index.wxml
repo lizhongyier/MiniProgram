@@ -1,0 +1,10 @@
+<!--miniprogram/pages/multiplicationtable/index.wxml-->
+
+<view wx:for="{{number}}" wx:for-item="i" wx:key="{{index}}">
+<text wx:for="{{number}}" wx:for-item="j" wx:key="{{index}}">
+<text wx:if="{{j<=i}}">
+<text style='margin-right:5px'> {{ j }}*{{ i }}={{ i*j }}</text>
+</text>
+</text>
+</view>
+

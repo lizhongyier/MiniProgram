@@ -1,0 +1,44 @@
+<view class='category flex'>
+  <view class='categorymask'style="display:{{showMenu?'block':'none'}}" bindtap='tapMenu'></view>
+  <!-- 头部 -->
+  <view class='top-bar flex '>
+    <view class='goback' bindtap='toHome'>
+      <text class='icon-back'></text>
+    </view>
+    <view class='input flex-item flex'>
+      <icon class='icon' size='15' type='search'></icon>
+      <input placeholder='请输入商品名称' bindtap='toSearch'/>
+    </view>
+    <view class='menu'>
+      <text class='icon-menu' bindtap='tapMenu'></text>
+      <view class='menu-ul' style="display:{{showMenu?'block':'none'}}">
+        <view class='menu-li' wx:for="{{menuMsg}}" wx:key="{{index}}">
+          <navigator class='flex' url='{{item.url}}'>
+            <view class='icon'>
+              <text class='fa {{item.icon}}'></text>
+            </view>
+            <view class='title flex-item'>{{item.title}}</view>
+
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <!-- 主体部分 -->
+  <view class='category-main flex-item'>
+    <view class='flex' id='scroll-category'>
+      <scroll-view scroll-y="{{true}}" style="height:{{height+'px'}}" class='main-left' scroll-into-view="{{toView}}" scroll-into-view="{{toView}}">
+        <view class="category-item {{(itemIndex==index)?'active':''}}" bindtap='selectCategory' wx:for="{{category}}" data-product="{{item.product}}" data-index="{{index}}" data-id="{{item.id}}" wx:key="{{index}}" id='item-{{item.id}}'>{{item.title}}
+        </view>
+      </scroll-view>
+
+      <view class='main-content flex-item'>
+      <view class='product' wx:for="{{products}}" wx:key="{{index}}">
+      <image class='img' mode='widthFix' src='{{item.src}}'></image>
+      <view class='title'>{{item.title}}</view>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

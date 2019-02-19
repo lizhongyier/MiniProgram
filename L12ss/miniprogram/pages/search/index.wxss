@@ -1,0 +1,73 @@
+.search-bar {
+  width: 100%;
+  height: 90rpx;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.search-bar .goback {
+  width: 80rpx;
+  height: 90rpx;
+}
+
+.search-bar .goback .icon-back {
+  margin: 24rpx 0 0 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTF1famFhal1fal1fal5ga2FhcF1falIa7fwAAAAHdFJOUwDxN1zamie3ypN1AAAAP0lEQVQoz2NgGAjA5GiAKahYLoCpUByLoGJ5uQEWhcXDRiGDOxaFDOXlAQzEqcRqJlbbh4VSAeLSEvZURyUAAGHYICnlu7kGAAAAAElFTkSuQmCC) no-repeat;
+  background-size: 100% 100%;
+}
+
+.search-bar .input {
+  background-color: #f7f7f7;
+  height: 60rpx;
+  border-radius: 30rpx;
+}
+
+.search-bar .input .icon {
+  margin: auto 20rpx;
+}
+
+.search-bar .Go {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0rpx 30rpx 0rpx 20rpx;
+  align-items: center;
+}
+
+.search-bar .go {
+  display: inline-block;
+  
+  box-sizing: border-box;
+  background-color: #e93b3d;
+  color: #fff;
+  border-radius: 12rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+  line-height: 60rpx;
+  width:100%;
+  height: 60rpx;
+  text-align: center;
+}
+.recommend{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.recommend .title{
+  line-height: 60rpx;
+}
+.recommend .content{
+  width: 100%;
+}
+.recommend .content text{
+  font-size: 24rpx;
+  color: #666;
+  padding: 4rpx 20rpx;
+  background-color: #e3e3e3;
+  margin: 10rpx 20rpx;
+  float: left;
+  border-radius: 10rpx;
+}

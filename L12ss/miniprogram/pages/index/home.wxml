@@ -1,0 +1,53 @@
+<!--miniprogram/pages/index/home.wxml-->
+<!-- 引入面板 -->
+<import src="/pages/templates/mainNav.wxml"/>
+<!-- 头部搜索 -->
+<view class='search-bar flex {{isFixed?"fixed":""}}'>
+<view class='category'>
+<text class='icon-category' bindtap='toCategory'></text>
+</view>
+<view class='input flex-item'>
+<text class='jd-logo'></text>
+<text class='line' style="border-right:1px solid #999"></text>
+<input placeholder='请输入商品名称' bindtap='toSearch'/>
+</view>
+<view class='login'>
+<navigator url='#'>登录</navigator>
+</view>
+</view>
+<!-- 轮播图 -->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  indicator-color="rgba{0,0,0,0.1}"
+  indicator-active-color="#ffffff"
+>
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='widthFix' />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 主导航 -->
+
+<view class='main-nav clear'>
+<template is="main-nav-item" wx:for="{{mainNav}}" wx:key="{{index}}" data="{{...item}}"></template>
+</view>
+
+<!-- 产品列表 -->
+<view class="products clear">
+<navigator url='{{item.url_1}}' class='probox' wx:for="{{products}}" wx:key="{{index}}">
+<image src='{{item.image}}' mode='widthFix'></image>
+<view class='text'>
+<text class='title'><text class='self'>自营</text>{{item.title}}</text>
+</view>
+<view class='buy clear'><text class='price'>￥{{item.price}}</text>
+<navigator url='{{item.url_2}}' class='same'>
+<text>看相似
+</text>
+</navigator>
+</view>
+</navigator>
+</view>
