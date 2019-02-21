@@ -1,0 +1,16 @@
+<view class="products clear">
+<navigator url='/pages/productdetail/index?id={{item.id}}' class='probox'>
+<view class='productcontent'>
+<image src='{{image}}' mode='widthFix'></image>
+<view class='text'>
+<text class='title'><text class='self'>自营</text>{{title}}</text>
+</view>
+<view class='buy clear'><text class='price'>￥{{price}}</text>
+<navigator url='{{url_2}}' class='same'>
+<text>看相似
+</text>
+</navigator>
+</view>
+</view>
+</navigator>
+</view>

@@ -1,0 +1,7 @@
+<!-- 主导航模板 -->
+<template name="main-nav-item">
+<navigator class='main-nav-item' url="{{url}}">
+<image src="{{image}}" mode='widthFix'></image>
+<text >{{title}}</text>
+</navigator>
+</template>

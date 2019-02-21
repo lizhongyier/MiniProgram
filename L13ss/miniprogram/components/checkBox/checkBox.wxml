@@ -1,0 +1,2 @@
+<!--components/check/check.wxml-->
+<text class="check-box {{selected?'selected':''}}"  bindtap='select'></text>

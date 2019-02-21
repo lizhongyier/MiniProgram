@@ -1,0 +1,28 @@
+/* miniprogram/pages/index/index.wxss */
+.content{
+  color: #FFFFFF;
+  height:100px;
+  }
+  .content > view{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+  }
+  .left{
+    float: left;
+  }
+  .right{
+  float: right;
+  }
+  .blue{
+    background-color: blue;
+  }
+  .red{
+    background-color: red;
+  }
+  image{
+    display: block;
+    width: 250px;
+    height: 28px;
+  }

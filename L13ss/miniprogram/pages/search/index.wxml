@@ -1,0 +1,29 @@
+<view class='search-bar flex '>
+  <view class='goback' bindtap='toHome'>
+    <text class='icon-back'></text>
+  </view>
+  <view class='input flex-item flex'>
+    <icon class='icon' size='15' type='search'></icon>
+    <input placeholder='请输入商品名称' bindtap='toSearch' />
+  </view>
+  <navigator class='flex Go' url='#'>
+    <text class='go'>搜索</text>
+  </navigator>
+</view>
+<view class='recommend'>
+<view class='title'>热门搜索</view>
+<view class='content clear'>
+<text>游戏方向盘</text>
+<text>多肉种子</text>
+<text>涮烤一体锅</text>
+<text>移动书架</text>
+<text>铝合金门窗</text>
+<text>按摩器</text>
+<text>珍珠胸针</text>
+<text>游戏本</text>
+<text>电压力锅</text>
+<text>电子秤</text>
+<text>电动剃须刀</text>
+<text>儿童爬行垫</text>
+</view>
+</view>

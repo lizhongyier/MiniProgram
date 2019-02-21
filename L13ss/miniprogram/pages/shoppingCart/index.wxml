@@ -1,0 +1,19 @@
+<topbar>
+<view class='top-title'>购物车</view>
+</topbar>
+<view class='empty' style='display:none;'>
+<image src='/images/empty.png' mode='widthFix'></image>
+<view class='emptytext'>里面空空如也~</view>
+<button type="primary" size="mini">登录</button>
+</view>
+
+
+<!-- bindselect bind后面的名字select由传出名决定 -->
+<check-box value="1" data="{{selected}}" bindselect="checkbox"></check-box>
+<check-box value="2" data="{{selected}}" bindselect="checkbox"></check-box>
+<check-box value="3" data="{{selected}}" bindselect="checkbox"></check-box>
+<check-box value="4" data="{{selected}}" bindselect="checkbox"></check-box>
+<shoppinglist></shoppinglist>
+<shoppinglist></shoppinglist>
+
+

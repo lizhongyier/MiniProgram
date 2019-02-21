@@ -1,0 +1,23 @@
+<!--components/product/shoppingproduct.wxml-->
+<view class='shopping-product flex'>
+  <view class='check-box'>
+    <check-box value="1" data="{{}}"></check-box>
+  </view>
+
+  <view class='pro-img'>
+    <image src='/images/pro3.jpg' mode='widthFix'></image>
+  </view>
+  <view class='product-info'>
+    <view class='product-title'>
+      联想ThinkPad 翼480 英特尔酷睿i5 14英寸轻薄窄边框笔记本电脑（i5-8250U 8G 256GSSD 2G独显 FHD ）银</view>
+    <view class='detail'>2.66kg/件，冰原银，翼480</view>
+    <view class='buy clear'>
+      <view class='product-price left'>￥4998</view>
+      <view class='product-count right'>
+        <view class='min'>-</view>
+        <view class='count'>1</view>
+        <view class='add'>+</view>
+      </view>
+    </view>
+  </view>
+</view>

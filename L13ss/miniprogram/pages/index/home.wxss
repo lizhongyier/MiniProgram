@@ -1,0 +1,103 @@
+/* miniprogram/pages/index/home.wxss */
+
+/* 顶部搜索 */
+
+.search-bar {
+  width: 100%;
+  height: 88rpx;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  justify-content: space-around;
+}
+
+.search-bar.fixed {
+  background-color: #e43130;
+}
+
+.search-bar .category, .search-bar .login {
+  height: 88rpx;
+  width: 100rpx;
+}
+
+.search-bar .category .icon-category {
+  margin: 28rpx 0 0 30rpx;
+  width: 40rpx;
+  height: 36rpx;
+  display: block;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgAgMAAAAdw9KTAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURUdwTP///////////waf0AoAAAADdFJOUwDjSYAlncUAAAAbSURBVBjTY5j/Hwq+MdTDmH+RmUgK6AuGhcsAU5tyB6Ji+x0AAAAASUVORK5CYII=);
+  background-size: 100% 100%;
+}
+
+.search-bar .input {
+  padding-top: 14rpx;
+}
+
+.search-bar .input input {
+  height: 60rpx;
+  width: 100%;
+  padding-left: 86rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+}
+
+.search-bar .input .jd-logo {
+  display: block;
+  width: 40rpx;
+  height: 30rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeBAMAAACs80HuAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURUdwTOk7Puo7PfE+SP9SUuo7Peo8Pu0/Qeo7Peo7Peo7Pek7Peo7Pes8Pus8P+k7PaLYf6IAAAAPdFJOUwCjwREGj1sg9Hrd6bFINxDM6d8AAAD3SURBVCjPY2AAAv3/nxnk////sUo1nQEOoIIgoOaARfD/WmyC/wNQBL+lzZQCCn5FEfwCZJX2//8/AV2Qoej//3YMQWb9/x8xBBkq/v8vwBBk/f8/AUOQ/f9/AQxBhvX/N2AKnv//AVMwHsjBEJz//zs2lVgE5bFpx2pR//8FUMEvcEE+mOPX/2+AC/JAvcnyH6gDJvj+/w8DEM0G0gEVZN8PDfpqkA6o4O3//5tBtGX//98OEEHmJGAkXWBgCNQC0t9Abv4aKrMewmYAR6sAAzyKfydABX8yIASFGSCCjQ/ggr+mg61WOjgXnHwmKSnpiM4FO5EBAIlo6/K7pNY1AAAAAElFTkSuQmCC) no-repeat;
+  background-size: 40rpx 30rpx;
+  margin: 16rpx 16rpx 0 30rpx;
+  position: absolute;
+  z-index: 1;
+  float: left;
+}
+
+.search-bar .input .line {
+  display: block;
+  position: absolute;
+  margin: 16rpx 16rpx 0 76rpx;
+  width: 2rpx;
+  height: 30rpx;
+}
+
+.search-bar .login {
+  text-align: center;
+  line-height: 88rpx;
+  color: #fff;
+}
+
+/*  轮播样式  */
+
+swiper image {
+  width: 100%;
+  height: 360rpx;
+}
+
+/* main-nav导航 */
+
+.main-nav {
+  width: 100%;
+}
+
+.main-nav .main-nav-item {
+  display: block;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.main-nav .main-nav-item image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 10px;
+}
+
+.main-nav .main-nav-item text {
+  display: block;
+  margin-top: 12rpx;
+  font-size: 24rpx;
+}
+
