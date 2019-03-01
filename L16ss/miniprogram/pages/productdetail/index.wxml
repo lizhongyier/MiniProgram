@@ -1,0 +1,67 @@
+<!--miniprogram/pages/productdetail/index.wxml-->
+<view class='productdetail'>
+  <image src='{{image}}' mode='widthFix'></image>
+  <view class='detail-title'>{{title}}</view>
+  <text class='detail-price'>￥{{price}}</text>
+  <view class='detail-id'>id:{{id}}</view>
+</view>
+<view>颜色:{{color}}</view>
+<view>型号:{{size}}</view>
+
+<view class='option flex'>
+  <view class='flex-item'>
+    <view class='fa fa-user'></view>
+    <text class='tips'>联系客服</text>
+  </view>
+  <view class='flex-item'>
+    <view class='fa fa-home'></view>
+    <text class='tips'>店铺</text>
+  </view>
+  <view class='flex-item'>
+    <view class='fa fa-shopping-cart'></view>
+    <text class='tips'>购物车</text>
+  </view>
+
+  <view class='btn-addcart'  bindtap='showPop'>加入购物车</view>
+  <view class='btn-buy'  bindtap='showPop'>立即购买</view>
+</view>
+<view class='pop' wx:if="{{pop}}">
+  <view class='mask' bindtap='hidePop'></view>
+  <view class="pop-option {{pop?'active':''}}">
+  <view class='content'>
+  <view class='list1 flex'>
+  <view class='img'><image src='{{image}}' mode='widthFix'></image></view>
+  <view class='text'>
+  <view class='choose-price'>￥<text>{{price}}</text></view>
+  <view class='choose-content'>已选{{select.color}}-{{select.size}},已选{{select.count}}个</view>
+  </view>
+  </view>
+  <view class='list2'>
+  <view class='color'>颜色</view>
+  <view class='clear'>
+  <view class="color-item {{item==select.color?'active':''}}" bindtap='chooseColor' data-color='{{item}}' wx:for="{{color}}" wx:key="{{index}}">
+  {{item}}
+  </view>
+  </view>
+  </view>
+  <view class='list3'>
+  <view class='size'>型号</view>
+  <view class='clear'>
+  <view class="size-item {{item==select.size?'active':''}}" bindtap='chooseSize' data-size='{{item}}' wx:for="{{size}}" wx:key="{{index}}">{{item}}</view>
+  </view>
+  </view>
+  <view class='count clear'>
+  <view class='number left'>型号</view>
+  <view class='caclute right'>
+  <text class='minus' bindtap='reduce'>-</text>
+  <text class='num'>{{select.count}}</text>
+  <text class='add' bindtap='add'>+</text>
+  </view>
+  </view>
+
+  </view>
+  <view class='choose' bindtap='addshopingcart'>
+  确定
+  </view>
+  </view>
+</view>

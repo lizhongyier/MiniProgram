@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "topbar":"/components/topbar/topbar",
+    "check-box": "/components/checkBox/checkBox",
+    "shoppinglist": "/components/product/shoppingproduct",
+    "totalbill": "/components/totalbill/totalbill"
+  }
+}

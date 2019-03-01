@@ -1,0 +1,14 @@
+/* miniprogram/pages/user/user.wxss */
+page{
+   background-color: #efeff4;
+}
+.weui-cells{
+  margin-top: 20px;
+}
+.avatar{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+}

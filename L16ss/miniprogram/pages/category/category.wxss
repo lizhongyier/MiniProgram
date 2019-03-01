@@ -1,0 +1,63 @@
+
+/* 整个页面 */
+
+.category {
+  flex-flow: column;
+  height: 100vh;
+}
+
+
+/* top-bar部分 */
+.top-bar .input {
+  background-color: #f7f7f7;
+  height: 60rpx;
+  border-radius: 30rpx;
+}
+
+.top-bar .input .icon {
+  margin: auto 20rpx;
+}
+
+
+/* 主体部分 */
+
+.category-main > .flex {
+  height: 100%;
+}
+
+/* 左面 */
+.category-main .main-left {
+  width: 170rpx;
+  height: 100%;
+  background-color: #f8f8f8;
+  border-right: solid 1px #e3e3e3;
+}
+.category-main .main-left .category-item{
+  height: 92rpx; 
+  line-height: 92rpx; 
+  text-align: center;
+  color: #333;
+  border-bottom: solid 1px #e3e3e3;
+}
+.category-main .main-left .active{
+   color: #e93b3d;
+   background-color: #fff;
+}
+/* 内容 */
+.category-main .main-content {
+  background-color: yellow;
+}
+.category-main .main-content .product{
+  width: 47%;
+  height: 600rpx;
+  float: left;
+  margin: 3px;
+  text-align: center
+}
+.category-main .main-content .product:nth-of-type(2n){
+  float: right;
+}
+.category-main .main-content .product .img{
+  width: 100%;
+  
+}

@@ -1,0 +1,16 @@
+<!--components/totalbill/totalbill.wxml-->
+<view class='total-bill clear'>
+  <view class='checkbox left' bindtap='select'>
+    <view class='check' >
+      <text class="check-box {{all?'selected':''}}"></text>
+    </view>
+    <text class='whole' bindtap='whole' bindeselect="whole">全选</text>
+  </view>
+  <view class='intotal left'>
+    <view class='intotal-text'>合计：<text>￥{{money}}</text></view>
+  </view>
+  <view class='topay right'>
+    去结算(<text>{{count}}件</text>)
+  </view>
+</view>
+<view class='bottomblock'></view>

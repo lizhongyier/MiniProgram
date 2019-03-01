@@ -1,0 +1,28 @@
+<!--components/product/shoppingproduct.wxml-->
+<view class='shopping-product flex' bindlongpress='deleteShopping' data-id="{{shoppingId}}" >
+  <view class='check-box'>
+    <check-box value="{{shoppingId}}" data="{{arr}}" bindselect="checkbox"></check-box>
+  </view>
+
+  <view class='pro-img'>
+    <navigator url='/pages/productdetail/index?id={{id}}'>
+      <image src='{{image}}' mode='widthFix'></image>
+    </navigator>
+  </view>
+  <view class='product-info'>
+    <view class='product-title'>
+      <navigator url='/pages/productdetail/index?id={{id}}'>
+        {{title}}
+      </navigator>
+    </view>
+    <view class='detail'>{{option}}</view>
+    <view class='buy clear'>
+      <view class='product-price left'>￥{{price}}</view>
+      <view class='product-count right'>
+        <view class='min' bindtap='reduce'>-</view>
+        <view class='count'>{{count}}</view>
+        <view class='add' bindtap='add'>+</view>
+      </view>
+    </view>
+  </view>
+</view>

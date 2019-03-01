@@ -1,0 +1,42 @@
+<!--miniprogram/pages/index/home.wxml-->
+<!-- 引入面板 -->
+<import src="/templates/mainNav.wxml"/>
+<!-- 头部搜索 -->
+<view class='search-bar flex {{isFixed?"fixed":""}}'>
+<view class='category'>
+<text class='icon-category' bindtap='toCategory'></text>
+</view>
+<view class='input flex-item'>
+<text class='jd-logo'></text>
+<text class='line' style="border-right:1px solid #999"></text>
+<input placeholder='请输入商品名称' bindtap='toSearch'/>
+</view>
+<view class='login'>
+<navigator url='#'>登录</navigator>
+</view>
+</view>
+<!-- 轮播图 -->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  indicator-color="rgba{0,0,0,0.1}"
+  indicator-active-color="#ffffff"
+>
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='widthFix' />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 主导航 -->
+
+<view class='main-nav clear'>
+<template is="main-nav-item" wx:for="{{mainNav}}" wx:key="{{index}}" data="{{...item}}"></template>
+</view>
+<view class='productlist'>
+<product wx:for="{{products}}" product-id="{{item._id}}" image="{{item.image}}" title="{{item.title}}" price="{{item.price}}" wx:key="{{index}}"></product>
+</view>
+
+<!-- 产品列表 -->

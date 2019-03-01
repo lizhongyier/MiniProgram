@@ -1,0 +1,26 @@
+<view class='categorymask'style="display:{{showMenu?'block':'none'}}" bindtap='tapMenu'></view>
+  <!-- 头部 -->
+  <view class='top-bar flex '>
+    <view class='goback' bindtap='toHome'>
+      <text class='icon-back'></text>
+    </view>
+    <view class='flex-item flex'>
+      <!-- 插槽 -->
+      <slot></slot>
+    </view>
+    <view class='menu'>
+      <text class='icon-menu' bindtap='tapMenu'></text>
+      <view class='menu-ul' style="display:{{showMenu?'block':'none'}}">
+        <view class='menu-li' wx:for="{{menuMsg}}" wx:key="{{index}}">
+          <navigator class='flex' url='{{item.url}}'>
+            <view class='icon'>
+              <text class='fa {{item.icon}}'></text>
+            </view>
+            <view class='title flex-item'>{{item.title}}</view>
+
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+  </view>

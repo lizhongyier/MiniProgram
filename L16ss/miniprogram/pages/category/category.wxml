@@ -1,0 +1,24 @@
+<view class='category flex'>
+  <topbar>
+  <view class='input flex-item flex'>
+      <icon class='icon' size='15' type='search'></icon>
+      <input placeholder='请输入商品名称' bindtap='toSearch'/>
+    </view>
+  </topbar>
+  <!-- 主体部分 -->
+  <view class='category-main flex-item'>
+    <view class='flex' id='scroll-category'>
+      <scroll-view scroll-y="{{true}}" style="height:{{height+'px'}}" class='main-left' scroll-into-view="{{toView}}" scroll-into-view="{{toView}}">
+        <view class="category-item {{(itemIndex==index)?'active':''}}" bindtap='selectCategory' wx:for="{{category}}" data-product="{{item.product}}" data-index="{{index}}" data-id="{{item.id}}" wx:key="{{index}}" id='item-{{item.id}}'>{{item.title}}
+        </view>
+      </scroll-view>
+
+      <view class='main-content flex-item'>
+      <view class='product' wx:for="{{products}}" wx:key="{{index}}">
+      <image class='img' mode='widthFix' src='{{item.src}}'></image>
+      <view class='title'>{{item.title}}</view>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>
